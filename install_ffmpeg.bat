@@ -87,7 +87,6 @@ if "%c%"=="" (
     cd C:\
     ren bin ffmpeg
     setx /m PATH "C:\ffmpeg;%PATH%"
-    ffmpeg -version
     echo if the above statements have errors, please rerun this .bat file as an administrator.
     pause
 )
