@@ -90,3 +90,23 @@ if "%c%"=="" (
     echo if the above statements have errors, please rerun this .bat file as an administrator.
     pause
 )
+
+:reboot
+color 0C
+set /P c="Rebooting your device is required. Reboot now? [Y/N] > "
+if /I "%c%" EQU "Y" (
+    echo Press any key to reboot...
+    pause > nul
+    shutdown /r
+) else (
+    if /I "%c%" EQU "N" (
+        echo Press any key to exit...
+        pause > nul
+        exit
+    ) else (
+        cls
+        echo Invalid argument
+        pause
+        goto :reboot
+    )
+)
