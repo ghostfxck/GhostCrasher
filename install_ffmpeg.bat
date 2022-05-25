@@ -1,5 +1,5 @@
 @echo off
-title ffmpeg installation
+title ffmpeg installer by ghostfxck#0001
 color 0A
 echo Please rerun this .bat file as administrator if you haven't.
 pause
