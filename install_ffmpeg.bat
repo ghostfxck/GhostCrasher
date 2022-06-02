@@ -95,11 +95,11 @@ if "%c%"=="" (
     cd C:\
     ren bin ffmpeg
     setx /m PATH "C:\ffmpeg;%PATH%"
-    echo if the above statements have errors, please rerun this .bat file as an administrator.
     pause
 )
 
 :reboot
+cls
 color 0C
 set /P c="Rebooting your device is required. Reboot now? [Y/N] > "
 if /I "%c%" EQU "Y" (
