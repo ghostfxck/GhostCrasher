@@ -2,7 +2,6 @@
 title ffmpeg installer by ghostfxck#001
 color 0A
 @echo off
-title Uninstall Windows key
 color 0A
 echo Administrative permissions required. Detecting permissions...
 net session >nul 2>&1
