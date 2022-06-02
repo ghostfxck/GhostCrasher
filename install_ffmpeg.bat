@@ -1,8 +1,19 @@
 @echo off
-title ffmpeg installer by ghostfxck#0001
+title ffmpeg installer by ghostfxck#001
 color 0A
-echo Please rerun this .bat file as administrator if you haven't.
-pause
+@echo off
+title Uninstall Windows key
+color 0A
+echo Administrative permissions required. Detecting permissions...
+net session >nul 2>&1
+if %errorLevel% == 0 (
+    echo Success: Administrative permissions confirmed.
+    pause
+) else (
+    echo Failure: Please rerun this batch file as Administrator.
+    pause
+    exit
+)
 :choice
 cls
 set /P c="Is 7-Zip installed? [Y/N] > "
