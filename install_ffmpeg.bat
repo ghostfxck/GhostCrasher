@@ -1,8 +1,6 @@
 @echo off
 title ffmpeg installer by ghostfxck#001
 color 0A
-@echo off
-color 0A
 echo Administrative permissions required. Detecting permissions...
 net session >nul 2>&1
 if %errorLevel% == 0 (
