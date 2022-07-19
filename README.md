@@ -1,3 +1,5 @@
+# Patched. Wont work anymore.
+- I might not update soon enough
 # GhostCrasher
 - A video and audio type of crash method for Discord only.
 - Only works for Discord PC application.
